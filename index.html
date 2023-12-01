@@ -3,156 +3,434 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/492ebb687c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="header-logo">
-          <!-- <div class="box" style="height: 50px">Logo</div> -->
-          <a href="L">
-            <img
-              src="https://mgl.gogo.mn/newsn/v4/images/gogo-logo.345096b3.png"
-              width="119"
-              alt="gogo logo"
-            />
-          </a>
-        </div>
-        <div class="header-menu">
-          <!-- <div class="box" style="height: 50px">menu</div> -->
-          <ul class="main-menu-container">
-            <li class="uk-inline"></li>
-            <a href="#" class="main-menu-link-item" aria-expanded="false">
-              &nbsp;Мэдээ &nbsp;<i class="fas fa-chevron-down text-12"></i
-            ></a>
-            <div
-              uk-dropdown="offset: 20"
-              class="uk-border-rounded home-submenu-container uk-dropdown"
-            >
-              <div class="inner-triangle"></div>
-              <div class="uk-width-large">
+      <div class="first-section">
+        <div class="header">
+          <div class="header-logo">
+            <!-- <div class="box" style="height: 50px">Logo</div> -->
+            <a href="L">
+              <img
+                src="https://mgl.gogo.mn/newsn/v4/images/gogo-logo.345096b3.png"
+                width="119"
+                alt="gogo logo"
+              />
+            </a>
+          </div>
+          <div class="header-menu">
+            <!-- <div class="box" style="height: 50px">menu</div> -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                Мэдээ
+                <span class="material-symbols-outlined"> expand_more </span>
+              </button>
+              <div class="dropdown-content">
                 <div
-                  uk-grid=""
-                  class="uk-dropdown-grid uk-child-width-1-3@m uk-grid-medium uk-grid uk-grid-stack"
+                  uk-dropdown="offset: 20"
+                  class="uk-border-rounded home-submenu-container uk-dropdown uk-open"
+                  style="left: 0px; top: 42px"
                 >
-                  <div class="home-submenu-col1">
-                    <ul class="uk-nav uk-dropdown-nav home-submenu-list">
-                      <li class="sub-menu-link-item">
-                        <a href="/i/2"> &nbsp; Улс төр </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/3"> &nbsp; Эдийн засаг </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/4"> &nbsp; Эрүүл мэнд </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/5"> &nbsp; Соёл урлаг </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/6"> &nbsp; Спорт </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/7"> &nbsp; Нийгэм </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="home-submenu-col2">
-                    <ul class="uk-nav uk-dropdown-nav home-submenu-list">
-                      <li class="sub-menu-link-item">
-                        <a href="/i/8"> &nbsp; Бизнес </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/9"> &nbsp; Боловсрол </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/72"> &nbsp; Дэлхийд </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/6876"> &nbsp; Технологи </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/6948"> &nbsp; Монгол наадам </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/7009"> &nbsp; GOGO тойм </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="home-submenu-col3">
-                    <ul class="uk-nav uk-dropdown-nav home-submenu-list">
-                      <li class="sub-menu-link-item">
-                        <a href="/i/8608"> &nbsp; SOS </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/9661"> &nbsp; Нягтлав </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/9666"> &nbsp; Нүүрсний хулгай </a>
-                      </li>
-                      <li class="sub-menu-link-item">
-                        <a href="/i/9670"> &nbsp; Мэддэг мэдээлдэг байя </a>
-                      </li>
-                    </ul>
+                  <div class="inner-triangle"></div>
+                  <div class="uk-width-large">
+                    <div
+                      uk-grid=""
+                      class="uk-dropdown-grid uk-child-width-1-3@m uk-grid-medium uk-grid"
+                    >
+                      <div class="home-submenu-col1 uk-first-column">
+                        <ul
+                          style="list-style: none"
+                          class="uk-nav uk-dropdown-nav home-submenu-list"
+                        >
+                          <li class="sub-menu-link-item">
+                            <a href="/i/2"> &nbsp; Улс төр </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/3"> &nbsp; Эдийн засаг </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/4"> &nbsp; Эрүүл мэнд </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/5"> &nbsp; Соёл урлаг </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/6"> &nbsp; Спорт </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/7"> &nbsp; Нийгэм </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="home-submenu-col2">
+                        <ul
+                          style="list-style: none"
+                          class="uk-nav uk-dropdown-nav home-submenu-list"
+                        >
+                          <li class="sub-menu-link-item">
+                            <a href="/i/8"> &nbsp; Бизнес </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/9"> &nbsp; Боловсрол </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/72"> &nbsp; Дэлхийд </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/6876"> &nbsp; Технологи </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/6948"> &nbsp; Монгол наадам </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/7009"> &nbsp; GOGO тойм </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="home-submenu-col3">
+                        <ul
+                          style="list-style: none"
+                          class="uk-nav uk-dropdown-nav home-submenu-list"
+                        >
+                          <li class="sub-menu-link-item">
+                            <a href="/i/8608"> &nbsp; SOS </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/9661"> &nbsp; Нягтлав </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/9666"> &nbsp; Нүүрсний хулгай </a>
+                          </li>
+                          <li class="sub-menu-link-item">
+                            <a href="/i/9670"> &nbsp; Мэддэг мэдээлдэг байя </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </ul>
+            <div class="dropdown">
+              <button class="dropbtn">
+                &nbsp;GoGo булан &nbsp;
+                <span class="material-symbols-outlined"> expand_more </span>
+              </button>
+              <div class="dropdown-content2">
+                <div class="home-submenu-col1 uk-first-column">
+                  <a href="/corner/21"> &nbsp; GoGo Cafe </a>
+                  <a href="/corner/7568"> &nbsp; Гарааны бизнес </a>
+                  <a href="/corner/9606"> &nbsp; Соёлын довтолгоо </a>
+                  <a href="/corner/9613"> &nbsp; СEO </a>
+                  <a href="/corner/9625"> &nbsp; Элчин сайд </a>
+                </div>
+                <div class="home-submenu-col3">
+                  <a href="/corner/9627"> &nbsp; GoGo асуулт </a>
+                  <a href="/corner/9651"> &nbsp; МЕГА ТӨСӨЛ </a>
+                  <a href="/corner/9654"> &nbsp; ГУТАЛ </a>
+                  <a href="/corner/9669"> &nbsp; Хүний түүх </a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                &nbsp;Үзэх &nbsp;
+                <div class="spot"></div>
+                <span class="material-symbols-outlined"> expand_more </span>
+              </button>
+              <div class="dropdown-content3">
+                <div class="home-submenu-col1 uk-first-column">
+                  <a href="/media?type=photo"> &nbsp; Фото </a>
+                  <a href="/media?type=video"> &nbsp; Видео </a>
+                  <a href="/media?type=comic"> &nbsp; Зурган өгүүлэмж </a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                &nbsp;Хэв маяг &nbsp;
+                <span class="material-symbols-outlined"> expand_more </span>
+              </button>
+
+              <div class="dropdown-content4">
+                <div class="home-submenu-col1 uk-first-column">
+                  <a href="/lifestyle/4?catId=9577"> &nbsp; Подкаст </a>
+                  <a href="/lifestyle/4?catId=9612"> &nbsp; Хүмүүс </a>
+                  <a href="/lifestyle/4?catId=9629"> &nbsp; Гэртээ тогооч </a>
+                  <a href="/lifestyle/4?catId=9633"> &nbsp; Аялал </a>
+                </div>
+                <div class="home-submenu-col">
+                  <a href="/lifestyle/4?catId=9637"> &nbsp; Зөвлөгөө </a>
+                  <a href="/lifestyle/4?catId=9652"> &nbsp; Хоолзүйч </a>
+                  <a href="/lifestyle/4?catId=9671">
+                    &nbsp; Миний санал болгох кино</a
+                  >
+                  <a href="/lifestyle/4?catId=9673"
+                    >&nbsp; Миний санал болгох ном</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="english">
+              English
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+          </div>
+          <div class="header-weather"></div>
+          <div class="header-menu1">
+            <div class="box" style="height: 50px">menu</div>
+          </div>
         </div>
-        <div class="header-weather">
-          <div class="box" style="height: 50px">weather</div>
+        <div class="main">
+          <div class="content">
+            <button
+              class="sport-btn"
+              style="max-width: 150px; height: fit-content"
+            >
+              Элчин сайд
+            </button>
+            <div
+              class="main-content-text"
+              style="font-size: 26px; font-family: sans-serif; color: black"
+            >
+              Сэбастиен Сүрүн: Монголын <br />томоохон орд ашиглалтад орж,<br />
+              дэлхийн эдийн засгийг хангах гэж<br />
+              буйд баяртай байна
+            </div>
+            <div
+              class="main-content-text2"
+              style="font-size: 13px; font-family: sans-serif; color: grey"
+            >
+              Бүгд Найрамдах Франц Улсаас Монгол Улсад суугаа Онц бөгөөд
+              Бүрэн<br />
+              эрхт Элчин сайд ноён Сэбастиен Сүрүнийг бид энэ удаагийн Элчин<br />
+              сайд булангийнхаа зочноор урилаа. Тэрбээр 2021 оны наймдугаар
+              сар...<br />
+            </div>
+            <div class="share-comm">
+              <div class="share-btn">
+                <i class="fa-solid fa-share"></i>
+                <p>698</p>
+              </div>
+              <div class="comment-btn">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  width="20"
+                />
+                <p>67</p>
+              </div>
+            </div>
+          </div>
+          <div class="elchin-said-img">
+            <div class="main-link">Дэлгэрэнгүй унших</div>
+            <img
+              src="https://mgl.gogo.mn/newsn/images/c/2023/05/306568-21052023-1684681783-50766307-emanuelmacron_macron_hurelsukh_erunhiilugch_france-21.jpg"
+              style="border-radius: 10px"
+              alt=""
+              class="elchin-said-img"
+            />
+          </div>
         </div>
-        <div class="header-menu1">
-          <div class="box" style="height: 50px">menu</div>
+        <div class="newses">
+          <div class="image-box">
+            <div class="img-hovers">
+              <img class="news-img" src="news1.jpeg" alt="" />
+              <div class="news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="news-text">
+              СОЁЛЫН ДОВТОЛГОО №62: Блоклуулсаар л байх уу?
+            </div>
+            <div class="comment-btn">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                157
+              </div>
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="image-box">
+            <div class="img-hovers">
+              <img src="news2.jpeg" alt="" />
+              <div class="news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="news-text">
+              Ш.Одонбаатар: Улаанбаатар-Дубай хотын хооронд шууд нислэг ирэх
+              сард эхэлнэ
+            </div>
+            <div class="comment-btn">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                69
+              </div>
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="image-box">
+            <div class="img-hovers">
+              <img src="news3.jpeg" alt="" />
+              <div class="news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="news-text">
+              ФОТО: Явган хүний зам дээр шахмал түлш зарж л байг уу?
+            </div>
+            <div class="comment-btn">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                57
+              </div>
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="image-box">
+            <img
+              src="sociolpay.jpeg"
+              alt=""
+              style="width: 300px; height: 270px"
+            />
+          </div>
         </div>
       </div>
-      <div class="main">
-        <div class="content">
-          <div class="box1">content</div>
-          <!-- <div class="box1">content</div> -->
-        </div>
-      </div>
-      <div class="newses">
-        <div class="image-box">news</div>
-        <div class="image-box">news</div>
-        <div class="image-box">news</div>
-        <div class="image-box">news</div>
-      </div>
+      <!--  -->
       <div class="small-news">
-        <div class="small-news-box">Large news</div>
+        <div class="small-news-box">
+          <img
+            src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313244-26112023-1701003754-1818926126-4545151515.jpg"
+            data-srcset="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313244-26112023-1701003754-1818926126-4545151515.jpg 1x, https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313244-26112023-1701003754-1818926126-4545151515.jpg 2x"
+            alt='Дэлхийн аваргын хэсгийн шатанд тоглох Монголын анхны баг "Team Lilgun" боллоо'
+            class="mobile-highlight-news-img lazy-image"
+            data-src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313244-26112023-1701003754-1818926126-4545151515.jpg"
+            lazy="loaded"
+          />
+          <div class="btn-and-news">
+            <button class="sport-btn">SPORT</button>
+            <h3 class="esport-news">
+              Дэлхийн аваргын хэсгийн шатанд тоглох Монголын анхны баг "Team
+              Lilgun" боллоо
+            </h3>
+          </div>
+        </div>
       </div>
       <!-- =================STORY+=============== -->
-      <div class="gogo-story">
-        <div class="title-story">
-          <div class="story-box">story</div>
-          <div class="story-box">story</div>
-          <div class="story-box3">story</div>
+      <section class="section-stories">
+        <div class="stories-title">
+          GoGo
+          <span class="gg-label-blue">СТОРИ</span>
         </div>
-        <div class="large-story">
-          <div class="story-box">story</div>
-          <div class="story-box">story</div>
-          <div class="story-box">story</div>
+        <div class="scroll-viewport">
+          <div class="l-stories">
+            <div class="story">
+              <img class="story-image" src="./stories/story.jpeg" alt="" />
+              <h2 class="story-title">
+                Илон Маскийг Газын зурваст ирэхийг Хамасын удирдагч урив
+              </h2>
+            </div>
+            <div class="story">
+              <img class="story-image" src="./stories/story2.jpeg" alt="" />
+              <h2 class="story-title">
+                Энэтхэгт 17 хоногийн турш хонгилд гацаад байсан иргэдийг аварчээ
+              </h2>
+            </div>
+            <div class="story">
+              <img class="story-image" src="./stories/story3.jpeg" alt="" />
+              <h2 class="story-title">
+                Ким Жон Уныг устгах төлөвлөгөөг Өмнөд Солонгосын тагнуул
+                санхүүжүүлж байсан гэв
+              </h2>
+            </div>
+            <div class="story">
+              <img class="story-image" src="./stories/story4.jpeg" alt="" />
+              <h2 class="story-title">
+                Абу Даби хотын зочид буудлыг монгол бичигт гэрэлтүүлгээр чимлээ
+              </h2>
+            </div>
+            <div class="story">
+              <img class="story-image" src="./stories/story5.jpeg" alt="" />
+              <h2 class="story-title">
+                Дэлхийн аваргын хэсгийн шатанд тоглох Монголын анхны баг "Team
+                Lilgun" боллоо
+              </h2>
+            </div>
+            <div class="story">
+              <img class="story-image" src="./stories/stor6.jpeg" alt="" />
+              <h2 class="story-title">XII сарын цаг агаарын ЕРӨНХИЙ ТӨЛӨВ</h2>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="gogo-story-960">
-        <div class="story-box-large">story</div>
-        <div class="story-box-large">story</div>
-        <div class="story-box-large">story</div>
-        <div class="story-box-large">story</div>
-        <div class="story-box-large">story</div>
-        <div class="story-box-large">story</div>
-      </div>
+      </section>
 
       <!-- =============DAYS==================== -->
+      <div
+        class="day-palnt"
+        style="display: flex; flex-direction: row; padding: 10px 0 0 40px"
+      >
+        <h2
+          style="
+            margin: 0;
+            color: #407ce8;
+            font-family: sans-serif;
+            font-weight: 500;
+          "
+        >
+          Өнөөдөр&nbsp;
+        </h2>
+        <img
+          src="https://mgl.gogo.mn//newsn/v4/images/todaynews.6ba1d8b2.png"
+          width="23"
+          alt=""
+          style="height: 26px"
+        />
+      </div>
       <div class="days">
-        <div class="day-box"></div>
-        <div class="day-box"></div>
-        <div class="day-box"></div>
-        <div class="day-box"></div>
-        <div class="day-box"></div>
-        <div class="day-box"></div>
+        <div class="first-day-box">
+          <p class="first-month-day">11 сарын 30</p>
+        </div>
+        <div class="day-box">
+          <p class="month-day">11 сарын 29</p>
+        </div>
+        <div class="day-box">
+          <p class="month-day">11 сарын 28</p>
+        </div>
+        <div class="day-box">
+          <p class="month-day">11 сарын 27</p>
+        </div>
+        <div class="day-box">
+          <p class="month-day">11 сарын 26</p>
+        </div>
+        <div class="day-box">
+          <p class="month-day">11 сарын 25</p>
+        </div>
+        <button
+          style="width: 27px; height: 27px; border: none; border-radius: 5px"
+          class="day-btn"
+        >
+          ...
+        </button>
       </div>
 
       <!-- 2 column news -->
@@ -160,40 +438,843 @@
       <!-- ----------- -->
       <div class="two-column">
         <div class="left">
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="advertising-image">Advertising</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="column-news">News 1</div>
-          <div class="see-more">Tsaash uzeh</div>
-        </div>
-        <div class="right">
-          <div class="column-news">Box news 1</div>
-          <div class="column-news">Box news 1</div>
-          <div class="column-news">Box news 1</div>
-          <div class="column-news">Box news 1</div>
-          <div class="column-news">Box news 1</div>
+          <!-- --------------NEWS1============ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news1.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                Сургуулийн өргөтгөлийн газрыг шийдвэрлэхээр “Хурд” группийн
+                удирдлагатай уулзана
+              </h3>
+              <p class="small-news">
+                Нийслэлийн Баянгол дүүргийн 26 дугаар хороо, Нарны хорооллыг
+                Нарны замтай холбох явган хүний гүүрэн байгууламжийг ирэх жил
+                хийхээр төлөвлөж байна. Тус
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  1
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                2
 
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 54 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS2============ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news2.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                “Алтай” хотхонд сургууль байгуулж, орц, гарцыг нэмэгдүүлнэ
+              </h3>
+              <p class="small-news">
+                Нийслэлийн Засаг дарга бөгөөд Улаанбаатар хотын Захирагч
+                Х.Нямбаатар холбогдох албаныхны хамт
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  4
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                7
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 5 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS3============================ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news3.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                СУРВАЛЖИЛГА: Цөлжилтийг зогсооход ₮24 их наядын санхүүжилт
+                шаардлагатай
+              </h3>
+              <p class="small-news">
+                Ногоон бизнесийн санхүүжилтийн боломжууд, санхүүжилт олж авах,
+                хууль эрх зүйн хүрээнд тулгарч
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  8
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                28
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 10 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS4============================ -->
+
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news4.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                ЧУУЛГАН: Замын хөдөлгөөний төлбөртэй бүс тогтоох заалтыг хуулийн
+                төслөөс хасах саналыг байнгын хорооны гишүүдийн олонх дэмжжээ
+              </h3>
+              <p class="small-news">
+                Нийслэл Улаанбаатар хотын замын хөдөлгөөний түгжрэлийг
+                бууруулах, гэр хорооллыг орон сууцжуулах
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  4
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                7
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 55 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS5============================ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news5.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>Улс, хоорондын худалдааг хөнгөвчлөх асуудлыг хэлэлцэв</h3>
+              <p class="small-news">
+                Гаалийн ерөнхий газрын Шуудан илгээмжийн гаалийн газраас төрийн
+                үйлчилгээг олон нийтэд шуурхай хүргэх, ил тод байх, гааль
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  4
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                3
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 44 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS6============================ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news6.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>ЧУУЛГАН: Д.Сүнжидийг ХЭҮК-ын даргаар томиллоо</h3>
+              <p class="small-news">
+                УИХ-ын чуулганы үдээс хойших нэгдсэн хуралдаанаар Хүний эрхийн
+                үндэсний комиссын даргаар Д.Сүнжидийг
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  2
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                1
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 4 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS7============================ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news7.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                УИХ-ын гишүүд Зэвсэгт хүчний 326,120, 032 дугаар ангид ажиллав
+              </h3>
+              <p class="small-news">
+                Монгол Улсын Их Хурлын Хүний эрхийн дэд хорооны дарга
+                Ц.Мөнхцэцэг, Улсын Их Хурлын гишүүн Ц.Сандаг
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  6
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                9
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 34 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS8============================ -->
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news8.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                Үл хөдлөх хөрөнгийн албан татварын хувь хэмжээг байршлаас
+                хамаарч 0.6-1 хувиар тогтооно
+              </h3>
+              <p class="small-news">
+                НИТХ-ын ээлжит XX хуралдааны эхний хэлэлцүүлэг болж байна.
+                Хуралдаанаар Нийслэлийн 2024 оны төсөв
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  9
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                3
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 12 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS9============================ -->
+
+          <div class="left-news-box">
+            <div class="news-hovers">
+              <img
+                class="left-news-img"
+                src="./2 column news/left-news9.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="left-news">
+              <h3>
+                ШШГЕГ: Д.Мөнх-Эрдэнийг эрүүдэн шүүсэн, хүний эрх зөрчсөн асуудал
+                байхгүй
+              </h3>
+              <p class="small-news">
+                Энэ талаар Шүүхийн шийдвэр гүйцэтгэх ерөнхий газраас
+                тодруулахад, Д.Мөнх-Эрдэнийн гаргасан гомдлын дагуу
+              </p>
+              <div class="comment-share">
+                <div class="margin-right-20 home-second-highlight-share">
+                  <i class="fas fa-share color-light-gray"></i>
+                  23
+                </div>
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                  width="15"
+                  alt=""
+                />
+                21
+
+                <img
+                  data-v-0aa28082=""
+                  src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                  width="15"
+                  alt=""
+                />
+                &nbsp; 24 минутын өмнө
+              </div>
+            </div>
+          </div>
+          <!-- ====================NEWS10============================ -->
+          <div class="see-more">
+            <div class="see">
+              <p>Цааш үзэх</p>
+              <img
+                src="https://mgl.gogo.mn//newsn/v4/images/more.50d348c2.png"
+                width="17"
+                alt=""
+                style="height: 21px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ===============+RIGHT-NEWS============= -->
+        <div class="right">
+          <div
+            class="ontsloh-medee"
+            style="
+              font-size: 20px;
+              font-weight: 550;
+              font-family: sans-serif;
+              display: flex;
+              margin-bottom: 50px;
+            "
+          >
+            <img
+              src="https://mgl.gogo.mn//newsn/v4/images/highlightnews.4812c9a7.png"
+              width="25"
+              alt=""
+              style="height: 30px"
+            />
+            &nbsp; Онцлох мэдээ
+          </div>
+          <div class="column-news">
+            <div class="news-hovers">
+              <img
+                class="right-news-img"
+                src="./ontsloh-medee/ontsloh-medee1.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            style="font-size: 15px; font-family: sans-serif; font-weight: 500"
+          >
+            12 САРЫН СПОРТ: Монгол багууд MLBB, PUBG Mobile-ын дэлхийн финалд
+            тоглоно
+          </div>
+          <div class="comment-share" style="opacity: 0.6; margin-bottom: 40px">
+            <div class="margin-right-20 home-second-highlight-share">
+              <i class="fas fa-share color-light-gray"></i>
+              23
+            </div>
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+              width="15"
+              alt=""
+            />
+            21
+
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+              width="15"
+              alt=""
+            />
+            &nbsp; 24 минутын өмнө
+          </div>
+
+          <!-- =============RIGHT NEWS 2============ -->
+          <div class="column-news">
+            <div class="news-hovers">
+              <img
+                class="right-news-img"
+                src="./ontsloh-medee/ontsloh-medee1.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            style="font-size: 15px; font-family: sans-serif; font-weight: 500"
+          >
+            12 САРЫН СПОРТ: Монгол багууд MLBB, PUBG Mobile-ын дэлхийн финалд
+            тоглоно
+          </div>
+          <div class="comment-share" style="opacity: 0.6; margin-bottom: 40px">
+            <div class="margin-right-20 home-second-highlight-share">
+              <i class="fas fa-share color-light-gray"></i>
+              23
+            </div>
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+              width="15"
+              alt=""
+            />
+            21
+
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+              width="15"
+              alt=""
+            />
+            &nbsp; 24 минутын өмнө
+          </div>
+
+          <!-- =============RIGHT NEWS 3============ -->
+          <div class="column-news">
+            <div class="news-hovers">
+              <img
+                class="right-news-img"
+                src="./ontsloh-medee/ontsloh-medee1.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            style="font-size: 15px; font-family: sans-serif; font-weight: 500"
+          >
+            12 САРЫН СПОРТ: Монгол багууд MLBB, PUBG Mobile-ын дэлхийн финалд
+            тоглоно
+          </div>
+          <div class="comment-share" style="opacity: 0.6; margin-bottom: 40px">
+            <div class="margin-right-20 home-second-highlight-share">
+              <i class="fas fa-share color-light-gray"></i>
+              23
+            </div>
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+              width="15"
+              alt=""
+            />
+            21
+
+            <img
+              data-v-0aa28082=""
+              src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+              width="15"
+              alt=""
+            />
+            &nbsp; 24 минутын өмнө
+          </div>
+
+          <!-- =============RIGHT NEWS 4============ -->
+          <div class="column-news">
+            <div class="news-hovers">
+              <img
+                class="right-news-img"
+                src="./ontsloh-medee/ontsloh-medee1.jpeg"
+                alt=""
+              />
+              <div class="left-news-link">
+                Унших
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            style="font-size: 15px; font-family: sans-serif; font-weight: 500"
+          >
+            12 САРЫН СПОРТ: Монгол багууд MLBB, PUBG Mobile-ын дэлхийн финалд
+            тоглоно
+          </div>
+          <!-- =====================TREND NEWS===================== -->
           <div class="trend-newses">
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
-            <div class="hot-news">hot-news-1</div>
+            <div
+              style="
+                display: flex;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: sans-serif;
+              "
+            >
+              <img
+                src="https://mgl.gogo.mn//newsn/v4/images/trend.43e0b806.png"
+                width="22"
+                alt=""
+                style="height: 26px"
+              />
+              &nbsp; Тренд мэдээ
+            </div>
+
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                1
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
+            <!-- =====================TREND NEWS2===================== -->
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                2
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
+            <!-- =====================TREND NEWS3===================== -->
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                3
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
+            <!-- =====================TREND NEWS4===================== -->
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                4
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
+            <!-- =====================TREND NEWS5===================== -->
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                5
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
+            <!-- =====================TREND NEWS6===================== -->
+            <div class="hot-news">
+              <div
+                style="
+                  font-weight: 700;
+                  color: #e00034;
+                  font-size: 46px;
+                  line-height: 46px;
+                "
+              >
+                6
+              </div>
+              <div style="font-size: 15px; font-family: sans-serif">
+                Арванхоёрдугаар сарын 29-нөөс эхлэн бүх нийтээр 4 хоног амарна
+              </div>
+            </div>
+            <div class="comment-share" style="opacity: 0.6">
+              <div class="margin-right-20 home-second-highlight-share">
+                <i class="fas fa-share color-light-gray"></i>
+                23
+              </div>
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                width="15"
+                alt=""
+              />
+              21
+
+              <img
+                data-v-0aa28082=""
+                src="https://mgl.gogo.mn//newsn/v4/images/time-gray.9098dcef.svg"
+                width="15"
+                alt=""
+              />
+              &nbsp; 24 минутын өмнө
+            </div>
+            <div style="color: grey">
+              ------------------------------------------------------
+            </div>
           </div>
         </div>
       </div>
@@ -268,30 +1349,31 @@
       </div>
 
       <!-- ========================COMIC====================================== -->
-      <div class="comics">
-        <div class="comic1">COMICS1</div>
-        <div class="comic2">COMICS2</div>
-      </div>
+      <section class="section-comics">
+        <h2 class="comic-title">
+          <div class="box" style="height: 50px; width: 200px">Comic Title</div>
+        </h2>
+        <div class="scroll-viewport">
+          <div class="l-comic">
+            <div class="box">Comic</div>
+            <div class="box">Comic</div>
+            <div class="box">Comic</div>
+            <div class="box">Comic</div>
+            <div class="box">Comic</div>
+            <div class="box">Comic</div>
+          </div>
+        </div>
+      </section>
+      <!-- =============END OF COMICS -->
 
-      <!-- =====================LIVE========================== -->
-      <div class="gogo-lives">
-        <div class="live">LIVE1</div>
-        <div class="live">LIVE2</div>
-        <div class="live">LIVE3</div>
-        <div class="live">LIVE4</div>
-        <div class="live">LIVE5</div>
-        <div class="live">LIVE6</div>
-        <div class="live">LIVE7</div>
-        <div class="live">LIVE8</div>
-      </div>
       <!-- =========++FOOTER++=========================== -->
       <footer class="gogo-footer">
-        <div class="footer-logo">gogo-footer-logo</div>
-        <div class="footer-main">bidnii tuhai</div>
-        <div class="footer-main">bidnii tuhai</div>
-        <div class="footer-main">bidnii tuhai</div>
-        <div class="footer-main">bidnii tuhai</div>
-        <!-- <div class="footer-main">bidnii tuhai</div> -->
+        <img
+          src="https://mgl.gogo.mn/newsn/v4/images/gogo-logo.345096b3.png"
+          alt="gogo logo"
+          width="120"
+        />
+        <div class="footer-main">menu</div>
       </footer>
     </div>
   </body>
